@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Notes website</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="wrapper-header">
+                <img src="./assets/images/📝Notes.png" alt="note image" class="notes-image">
+                <div class="wrapper-header2">
+                    <img src="./assets/images/notes.png" alt="mini note">
+                    <p class="header-text">Всего заметок: <span class="number">0</span></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+            <form action="" class="form">
+                <span class="span-text">Название заметки</span>            
+                <input type="text" class="input-name" placeholder="Напишите название новой заметки...">
+                <div class="wrapper-description-color">
+                    <div class="wrapper-description">
+                        <span class="span-text">Описание новой заметки</span>
+                        <textarea name="description" class="input-description" id="" placeholder="Напишите описание новой заметки..."></textarea>
+                    </div>
+                    <div class="wrapper-colors">
+                        <!-- <span class="span-text">Выберите цвет заметки</span> -->
+                        <p class="span-text">Выберите цвет заметки</p>
+                        <ul class="ul">
+                            <li class="selected">
+                                <div class="color yellow"></div>
+                            </li>
+                            <li>
+                                <div class="color green"></div>
+                            </li>
+                            <li>
+                                <div class="color blue"></div>
+                            </li>
+                            <li>
+                                <div class="color red"></div>
+                            </li>
+                            <li>
+                                <div class="color purple"></div>
+                            </li>
+                        </ul>
+                        <button class="add-button"><img src="./assets/images/plus-svgrepo-com-1.png" alt="plus icon" class="icon"> Добавить заметку</button>
+                    </div>
+                </div>
+            </form>
+            <div class="likes-filter"><img src="./assets/images/checkbox inactive.png" alt="square" class="checkbox">Показать только избранные заметки</div>
+    </div>
+    <div class="container">
+        <div class="note-block">
+
+        </div>
+        <div class="messages">
+            <div class="wrapper-message add-message">
+                <img src="./assets/images/Done.png" alt="done image" class="icon">
+                <span class="message-text">Заметка добавлена!</span>
+            </div>
+
+            <div class="wrapper-message max-length-message">
+                <img src="./assets/images/warning.png" alt="warning icon" class="icon">
+                <span class="message-text">Максимальная длина заголовка - 50 символов!</span>
+            </div>
+
+            <div class="wrapper-message fill-message">
+                <img src="./assets/images/warning.png" alt="warning icon" class="icon">
+                <span class="message-text">Заполните все поля!</span>
+            </div>
+
+            <div class="wrapper-message delete-message">
+                <img src="./assets/images/Done.png" alt="done image" class="icon">
+                <span class="message-text">Заметка удалена!</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(250, 250, 252, 1);
+}
+
+.header {
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 1px 3px rgba(11, 12, 13, 0.16);
+    margin-bottom: 24px;
+}
+
+.wrapper-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-header2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.number {
+    font-weight: bold;
+}
+
+.container {
+    border: 1px solid red;
+    padding: 0 64px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    box-shadow: 0 16px 24px rgba(11, 12, 13, 0.08); 
+    background-color: rgba(255, 255, 255, 1);
+    margin-bottom: 24px;
+}
+
+.span-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(145, 145, 145, 1);
+}
+
+.input-name {
+    border: 1px solid rgba(232, 232, 232, 1);
+    padding: 6px 12px;
+    max-width: 344px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+
+}
+
+.input-description {
+    border: 1px solid rgba(232, 232, 232, 1);
+    padding: 6px 12px 0px;
+    /* max-width: 848px; */
+    border-radius: 10px;
+    resize: none;
+    min-height: 84px;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(145, 145, 145, 1);
+}
+
+.wrapper-description-color {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: start; */
+}
+
+.wrapper-description {
+    margin-right: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.wrapper-colors {
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1; */
+}
+
+.ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+li {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.color:hover {
+    width: 28px;
+    height: 28px;
+    box-shadow: 4px 4px 6px 0px rgba(81, 91, 117, 0.25);
+}
+
+.selected {
+    border: 1.5px solid rgba(69, 124, 220, 1);
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.yellow {
+    background-color: rgba(243, 219, 125, 1);
+}
+
+.green {
+    background-color: rgba(194, 243, 125, 1);
+}
+
+.blue {
+    background-color: rgba(125, 225, 243, 1);
+}
+
+.red {
+    background-color: rgba(243, 125, 125, 1);
+}
+
+.purple {
+    background-color: rgba(231, 125, 243, 1);
+}
+
+.add-button {
+    background-color: rgba(69, 124, 220, 1);
+    color: rgba(255, 255, 255, 1);
+
+    max-width: 232px;
+    padding: 6px 0;
+    border-radius: 10px;
+    border: none;
+    
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+
+    cursor: pointer;
+    transition: 0.5s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon {
+    filter: invert(100%);
+}
+
+.add-button:hover {
+    transform: translateY(-7px);
+}
+
+.likes-filter {
+    display: none;
+    gap: 8px;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 12px;
+    padding: 4px 0;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.note-block {
+    display: flex;
+    align-items: start;
+    flex-flow: wrap;
+    gap: 24px;
+}
+
+.text-without-notes {
+    margin: 70px auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.messages {
+    /* max-width: 100%; */
+    position: fixed;
+    bottom: 72px;
+    right: 64px;
+    /* display: none; */
+}
+
+.wrapper-message {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 12px 24px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.message-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.add-message, .delete-message {
+    background-color: rgba(71, 178, 125, 1);
+    display: none;
+}
+
+.max-length-message, .fill-message {
+    background-color: rgba(242, 61, 91, 1);
+    display: none;
+}
+
+.active {
+    display: flex;
+}
+
+/* работы с заметками из js */
+
+.note {
+    width: 368px;
+    /* height: 100%; */
+    box-shadow: 0 8px 8px rgba(11, 12, 13, 0.08);
+    word-break: break-all;
+}
+
+.header-note {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    /* background-color: rgb(177, 204, 230); */
+}
+
+.wrapper-header-note {
+    display: flex;
+    gap: 12px;
+}
+
+.text-header-note {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.text-note {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.note-description {
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.trash-icon:hover, .like-icon:hover, .checkbox:hover {
+    cursor: pointer; 
+}
+
+.checkbox.active {
+    content: url("./assets/images/checkbox\ active.png");
+}
+
+@media screen and (max-width: 375px) {
+    .wrapper-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .notes-image {
+        max-width: 150px;
+        height: auto;
+    }
+
+    .wrapper-description-color {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    input::placeholder, textarea::placeholder {
+        font-size: 12px;
+    }
+
+    .ul {
+        gap: 3px;
+    }
+
+    .likes-filter {
+        justify-content: center;
+    }
+
+    .messages {
+        bottom: 10px;
+        right: 10px;
+    }
+    
+    .wrapper-message {
+        gap: 5px;
+        padding: 0 5px;
+    }
+
+    .message-text {
+        font-size: 10px;
+    }
+}
